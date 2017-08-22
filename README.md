@@ -27,7 +27,7 @@ User attributes can be passed to the methods in the following format:
 ### User functions
 #### Authenticate a user
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.auth(username, password, userPoolId, clientId)
     .then(// Handle result here)
     .catch(// Handle exception here);
@@ -35,7 +35,7 @@ wrapper.UserService.auth(username, password, userPoolId, clientId)
 
 #### Create a user
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.create(username, password, userPoolId, clientId, attributes)
     .then(// Handle result here)
     .catch(// Handle exception here);
@@ -44,7 +44,7 @@ See the *User attributes* section for the expected format of the attributes para
 
 #### Confirm user registration
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.confirmRegistration(username, confirmationCode, userPoolId, clientId)
     .then(// Handle result here)
     .catch(// Handle exception here);
@@ -52,7 +52,7 @@ wrapper.UserService.confirmRegistration(username, confirmationCode, userPoolId, 
 
 #### Resend user confirmation code
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.resendConfirmationCode(username, userPoolId, clientId)
     .then(// Handle result here)
     .catch(// Handle exception here);
@@ -60,7 +60,7 @@ wrapper.UserService.resendConfirmationCode(username, userPoolId, clientId)
 
 #### Get user attributes
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.getAttributes(username, userPoolId, clientId)
     .then(// Handle result here)
     .catch(// Handle exception here);
@@ -68,7 +68,7 @@ wrapper.UserService.getAttributes(username, userPoolId, clientId)
 
 #### Delete user attributes
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.deleteAttributes(username, attributeNames, userPoolId, clientId)
     .then(// Handle result here)
     .catch(// Handle exception here);
@@ -77,7 +77,7 @@ The attributeNames parameter is simply an array of the attribute names.
 
 #### Update user attributes
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.updateAttributes(username, attributes, userPoolId, clientId)
     .then(// Handle result here)
     .catch(// Handle exception here);
@@ -86,7 +86,7 @@ See the *User attributes* section for the expected format of the attributes para
 
 #### Change user password
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.changePassword(username, oldPassword, newPassword, userPoolId, clientId)
     .then(// Handle result here)
     .catch(// Handle exception here);
@@ -94,7 +94,7 @@ wrapper.UserService.changePassword(username, oldPassword, newPassword, userPoolI
 
 #### Send forgot password notification
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.forgotPassword(username, userPoolId, clientId)
     .then(// Handle result here)
     .catch(// Handle exception here);
@@ -102,7 +102,7 @@ wrapper.UserService.forgotPassword(username, userPoolId, clientId)
 
 #### Remove a user
 ```
-const wrapper = require('aws-cognito-wrapper');
+const cognito = require('aws-cognito-wrapper');
 wrapper.UserService.remove(username, userPoolId, clientId)
     .then(// Handle result here)
     .catch(// Handle exception here);
