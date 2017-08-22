@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "env", {
+        "targets": { "node": "current" },
+        "modules": false,
+        "useBuiltIns": true
+        }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "istanbul"
+      ]
+    }
+  },
+  "plugins": ["transform-decorators-legacy"]
+ }

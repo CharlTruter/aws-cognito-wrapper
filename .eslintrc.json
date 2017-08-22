@@ -1,0 +1,22 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "import"
+  ],
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node":{
+        "paths": ["./src","./tests"]
+      }
+    }
+  },
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "no-underscore-dangle":"off",
+    "class-methods-use-this": "off"
+  }
+}
