@@ -1,6 +1,6 @@
 import * as awsCognito from 'amazon-cognito-identity-js';
 import UserService from './userService';
 
-export default {
+module.exports = {
   UserService: new UserService(awsCognito),
 };
