@@ -6,8 +6,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    library: 'aws-cognito-wrapper',
-    libraryTarget: 'commonjs2',
+    library: 'awsCognitoWrapper',
+    libraryTarget: 'umd',
   },
   resolve: {
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
